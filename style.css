@@ -24,3 +24,25 @@ input{
 .img-fluid{
     filter: drop-shadow(2px 2px 5px black);
 }
+.homeNav{
+    background-color: transparent !important;
+}
+.homeNav li a{
+    color: white !important;
+}
+.navbar-toggler{
+    border-color: aliceblue;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.top3{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.topItem{
+    background-color: aqua;
+    /* height: fit-content;
+    width: fit-content; */
+}
