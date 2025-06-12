@@ -14,7 +14,8 @@
     <link rel="shortcut icon" href="./assets/add-user.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: black;">
+<div class="container-fluid">
+  <body style="background-color: black;">
   <nav class="homeNav navbar navbar-light navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -46,46 +47,62 @@
     <h1 class="text-light">Catch Extra Ordinary Collection of Watches on our Store</h1>
     <h3 class="text-secondary">Turn yourself into something Real !</h3>
     <div class="mt-5">
-      <h4>Top 3 Picks of the Week</h4>
-      <div class="top3">
+      <h4 style="color: #d3d5fd;">Top 3 Picks of the Week</h4>
+      <div class="top3 m-4">
         <div class="topItem">
-          <h4>Titan Octane Primal Quartz Chronograph</h4>
+          <h4>Titan Octane Primal Quartz</h4>
           <img class="img-fluid" src="./assets/top3 (1).png" alt="">
           <p>₹ 11,995.00</p>
-          <a class="btn btn-primary" href="">Buy Now</a>
+          <a class="btn btn-primary w-50" href="">Buy Now</a>
         </div>
         <div class="topItem">
           <h4>Casio MRG-B2000BG-3A</h4>
           <img class="img-fluid" src="./assets/top3 (2).png" alt="">
           <p>₹ 7,798.00</p>
-          <a class="btn btn-primary" href="">Buy Now</a>
+          <a class="btn btn-primary w-50" href="">Buy Now</a>
         </div>
         <div class="topItem">
           <h4>Titan Women's Lagan Watch</h4>
           <img class="img-fluid" src="./assets/top3 (3).png" alt="">
           <p>₹ 2,685.00</p>
-          <a class="btn btn-primary" href="">Buy Now</a>
+          <a class="btn btn-primary w-50" href="">Buy Now</a>
         </div>
       </div>
     </div>
   </div>  
-  <div class="col-6">
-    <h3>Special Edition Collection</h3>
+  <div class="col-6 mt-4">
+    <h3 class="text-light text-center">Special Edition Collection</h3>
     <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+  <div class="carousel-inner mt-4 p-4">
+    <div class="carousel-item active ">
+      <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
+        <h4>POLICE Batman Collector's Edition</h4>
+        <p><del>₹16,032</del>  ₹9,613</p>
+        <a class="btn btn-primary w-75" href="">Check Now</a>
+      </div>
+      <img src="./assets/batmanwatch.png" class="w-50 m-4" alt="..."></div>
+      
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
+        <h4>POLICE Batman Collector's Edition</h4>
+        <p><del>₹16,032</del>  ₹9,613</p>
+        <a class="btn btn-primary w-75" href="">Check Now</a>
+      </div>
+      <img src="./assets/sup1.png" class="w-50 m-4" alt="..."></div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
+        <h4>POLICE Batman Collector's Edition</h4>
+        <p><del>₹16,032</del>  ₹9,613</p>
+        <a class="btn btn-primary w-75" href="">Check Now</a>
+      </div>
+      <img src="./assets/sup2.png" class="w-50 m-4" alt="..."></div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -98,6 +115,7 @@
   </button>
 </div>
   </div>
+</div>
 </div>
 </body>
 </html>
