@@ -26,7 +26,11 @@ input{
     filter: drop-shadow(2px 2px 5px black);
 }
 .homeNav{
+    width: 100%;
     background-color: transparent !important;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 1;
 }
 .homeNav li a{
     color: white !important;
@@ -37,6 +41,10 @@ input{
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.main{
+    position: relative;
+    top: 50px;
+}
 .top3{
 display: flex;
 justify-content: space-around;
@@ -46,11 +54,25 @@ align-items: center;
     width: 100%;
     filter: drop-shadow(5px 5px 20px black);
 }
-.topItem a{
+.topItem a, .spcl a{
+    text-shadow: none;
     margin-bottom: 5px !important;
-    
+    background-color: #d3d5fd;
+    border: 1px solid  black !important;
+    color: black;
+}
+.topItem a:hover{
+    background-color: black !important;
+    border: 1px solid  black !important;
+    color: white;
+}
+.spcl a:hover{
+    background-color: black !important;
+    border: 1px solid  white !important;
+    color: white;
 }
 .topItem{
+    text-shadow: 0px 0px 5px black;
     box-sizing: border-box;
     background-color: #474a56;
     color: white;
@@ -78,8 +100,26 @@ align-items: center;
 @media screen and (max-width: 991px){
     .top3{
         flex-direction: column;
+        
     }
     .topItem{
-        width: 50%;
+        margin-bottom: 2px;
+        justify-content: center;
+        width: 80%;
+        height: fit-content;
     }
+    .topItem h4{
+        font-size: 1rem;
+    }
+    .topItem a{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+    .topItem img{
+        width: 100%;
+    }
+}
+.banner img{
+    width: 100%;
+    margin: 5px;
 }

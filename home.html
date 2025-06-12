@@ -12,11 +12,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/add-user.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="container-fluid">
+<div class="container-fluid ">
   <body style="background-color: black;">
-  <nav class="homeNav navbar navbar-light navbar-expand-lg bg-body-tertiary">
+    <script>
+  AOS.init();
+</script>
+  <nav class="homeNav navbar navbar-light navbar-expand-lg bg-body-tertiary pe-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="./assets/Wc-removebg-preview.png" alt="Bootstrap" height="40">
@@ -42,13 +48,16 @@
     </div>
   </div>
 </nav>
-<div class="row">
-  <div class="col-6 text-center mt-4">
-    <h1 class="text-light">Catch Extra Ordinary Collection of Watches on our Store</h1>
-    <h3 class="text-secondary">Turn yourself into something Real !</h3>
+<div class="main">
+  <div class="row">
+  <div data-aos="fade-right" class="col-6 text-center mt-4 d-flex justify-content-between align-items-center flex-column">
+    <div>
+      <h1 data-aos="fade-right" data-aos-duration="700" class="text-light">Catch Extra Ordinary Collection of Watches on our Store</h1>
+    <h3 data-aos="fade-left" data-aos-duration="900" class="text-secondary">Turn yourself into something Real !</h3>
     <div class="mt-5">
-      <h4 style="color: #d3d5fd;">Top 3 Picks of the Week</h4>
-      <div class="top3 m-4">
+      <h4 data-aos="fade-up" data-aos-duration="700" style="color: #d3d5fd;">Top 3 Picks of the Week</h4>
+    </div>
+      <div data-aos="flip-up" data-aos-duration="700" class="top3 m-4">
         <div class="topItem">
           <h4>Titan Octane Primal Quartz</h4>
           <img class="img-fluid" src="./assets/top3 (1).png" alt="">
@@ -70,7 +79,7 @@
       </div>
     </div>
   </div>  
-  <div class="col-6 mt-4">
+  <div data-aos="fade-left" data-aos-duration="700" class="col-6 mt-4">
     <h3 class="text-light text-center">Special Edition Collection</h3>
     <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
@@ -80,27 +89,27 @@
   </div>
   <div class="carousel-inner mt-4 p-4">
     <div class="carousel-item active ">
-      <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
+      <div data-aos="fade-up" data-aos-duration="700" class="spcl"><div style="color: #d3d5fd;" class="text-center ">
         <h4>POLICE Batman Collector's Edition</h4>
         <p><del>₹16,032</del>  ₹9,613</p>
-        <a class="btn btn-primary w-75" href="">Check Now</a>
+        <a target="_blank" class="btn btn-primary w-75" href="">Check Now</a>
       </div>
       <img src="./assets/batmanwatch.png" class="w-50 m-4" alt="..."></div>
       
     </div>
     <div class="carousel-item">
       <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
-        <h4>POLICE Batman Collector's Edition</h4>
-        <p><del>₹16,032</del>  ₹9,613</p>
-        <a class="btn btn-primary w-75" href="">Check Now</a>
+        <h4>Superman x Fossil Limited-Edition</h4>
+        <p>₹ 17,495.00</p>
+        <a target="_blank" class="btn btn-primary w-75" href="https://www.fossil.com/en-in/products/superman-x-fossil-limited-edition-s-shield-watch-set/LE1207SET.html">Check Now</a>
       </div>
       <img src="./assets/sup1.png" class="w-50 m-4" alt="..."></div>
     </div>
     <div class="carousel-item">
       <div class="spcl"><div style="color: #d3d5fd;" class="text-center ">
-        <h4>POLICE Batman Collector's Edition</h4>
-        <p><del>₹16,032</del>  ₹9,613</p>
-        <a class="btn btn-primary w-75" href="">Check Now</a>
+        <h4>Superman x Fossil Limited-Edition</h4>
+        <p>₹ 15,995.00</p>
+        <a class="btn btn-primary w-75" href="https://www.fossil.com/en-in/products/superman-x-fossil-limited-edition-metropolis-watch-set/LE1208SET.html">Check Now</a>
       </div>
       <img src="./assets/sup2.png" class="w-50 m-4" alt="..."></div>
     </div>
@@ -115,6 +124,11 @@
   </button>
 </div>
   </div>
+</div>
+<div class="banner">
+  <img data-aos="zoom-out" data-aos-duration="" src="./assets/banner2.png" alt="">
+  <img data-aos="zoom-in" data-aos-duration="" src="./assets/banner1.jpg" alt="">
+</div>
 </div>
 </div>
 </body>
