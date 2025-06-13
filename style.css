@@ -2,6 +2,11 @@
     font-family: "Funnel Display", sans-serif;
     box-sizing: border-box;
 }
+.indexNav img, .loginNav img{
+    background-color: black;
+    width: 20%;
+    border-radius: 5px;
+}
 input{
     background-color: rgb(221, 221, 236) !important ;
 }
@@ -119,7 +124,44 @@ align-items: center;
         width: 100%;
     }
 }
-.banner img{
+.banner1,.banner2{
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner1 img, .banner2 img{
     width: 100%;
-    margin: 5px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.banner-content{
+    transition: opacity 0.2s, transform 0.7s ease;
+        position: absolute;
+        transform: translateX(-50%);
+        opacity: 0;
+        color: #d3d5fd;
+}
+.banner1:hover img, .banner2:hover img
+{
+    transition: 0.5s;
+    filter: brightness(40%);
+}
+.banner1:hover .banner-content, .banner2:hover .banner-content
+{
+    transform: translateX(0);
+    opacity: 1;
+    
+}
+.banner-content a{
+    transition: 0.5s;
+    background-color: transparent !important;
+    border: 1px solid white;
+}
+.banner-content a:hover{
+    background-color: black !important;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px white;
 }
