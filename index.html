@@ -13,17 +13,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/add-user.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
-<nav class="navbar bg-body-light p-2 indexNav">
+<nav data-aos="slide-down" class="navbar bg-body-light p-2 indexNav">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="./assets/Wc-removebg-preview.png" alt="Logo"></a>
   </div>
 </nav>
 <div class="row container-fluid">
-    <div class="col-6 text-center d-flex justify-content-center align-items-center flex-column">
-        <h3>Sign Up</h3>
-          <form style="width: 55%;">
+    <div class="col-sm-6 text-center d-flex justify-content-center align-items-center flex-column">
+        <h3 data-aos="fade-down" data-aos-duration="400" >Sign Up</h3>
+          <form  data-aos="fade-right" data-aos-duration="600" style="width: 55%;">
   <div class="mb-4 mt-4">
     <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
     <input type="email" class="form-control pt-2 pb-2 ps-4 pe-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
@@ -42,21 +45,24 @@
   </div>
   <a href="./login.html" class="button btn btn-primary w-100 p-2">Register</button></a>
 </form>
-<div class="m-5 icons">
+<div data-aos="fade-up" data-aos-duration="700" class="m-5 icons">
   <p class="text-secondary mb-4">or continue with</p>
   <a class="m-3 text-dark" href=""><i class="fa-brands fa-facebook-f"></i></a>
   <a class="m-3 text-dark" href=""><i class="fa-brands fa-apple"></i></a>
   <a class="m-3 text-dark" href=""><i class="fa-brands fa-google"></i></a>
 </div>
     </div>
-    <div class="col-6 text-center">
-      <h1>Sign Up to our Page</h1>
-      <h5>If you already have an account,</h5>
-      <a class="text-decoration-none text-primary" href="./login.html">Login Here !</a>
-      <div class="text-center">
+    <div class="col-sm-6 text-center">
+      <h1 data-aos="fade-left" data-aos-duration="700">Sign Up to our Page</h1>
+      <h5 data-aos="fade-right" data-aos-duration="700">If you already have an account,</h5>
+      <a class="text-decoration-none text-secondary" href="./login.html">Login Here !</a>
+      <div data-aos="zoom-in" data-aos-duration="700" class="text-center">
       <img class="img-fluid" src="./assets/login.png" alt="">
       </div>
     </div>
 </div>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

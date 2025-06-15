@@ -14,15 +14,14 @@
     <link rel="shortcut icon" href="./assets/add-user.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="shortcut icon" href="./assets/hand-watch.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="container-fluid ">
   <body style="background-color: black;">
-    <script>
-  AOS.init();
-</script>
-  <nav class="homeNav navbar navbar-light navbar-expand-lg bg-body-tertiary pe-3">
+    
+  <nav data-aos="slide-down" data-aos-duration="800" class="homeNav navbar navbar-light navbar-expand-lg bg-body-tertiary pe-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="./assets/Wc-removebg-preview.png" alt="Bootstrap" height="40">
@@ -50,27 +49,27 @@
 </nav>
 <div class="main">
   <div class="row">
-  <div data-aos="fade-right" class="col-6 text-center mt-4 d-flex justify-content-between align-items-center flex-column">
+  <div data-aos="fade-right" class="col-lg-6 text-center mt-4 d-flex justify-content-between align-items-center flex-column">
     <div>
       <h1 data-aos="fade-right" data-aos-duration="700" class="text-light">Catch Extra Ordinary Collection of Watches on our Store</h1>
     <h3 data-aos="fade-left" data-aos-duration="900" class="text-secondary">Turn yourself into something Real !</h3>
     <div class="mt-5">
       <h4 data-aos="fade-up" data-aos-duration="700" style="color: #d3d5fd;">Top 3 Picks of the Week</h4>
     </div>
-      <div data-aos="flip-up" data-aos-duration="700" class="top3 m-4">
-        <div class="topItem">
+      <div class="top3 m-4">
+        <div data-aos="flip-left" data-aos-duration="700" class="topItem">
           <h4>Titan Octane Primal Quartz</h4>
           <img class="img-fluid" src="./assets/top3 (1).png" alt="">
           <p>₹ 11,995.00</p>
           <a class="btn btn-primary w-50" href="">Buy Now</a>
         </div>
-        <div class="topItem">
+        <div data-aos="flip-down" data-aos-duration="700" class="topItem">
           <h4>Casio MRG-B2000BG-3A</h4>
           <img class="img-fluid" src="./assets/top3 (2).png" alt="">
           <p>₹ 7,798.00</p>
           <a class="btn btn-primary w-50" href="">Buy Now</a>
         </div>
-        <div class="topItem">
+        <div data-aos="flip-right" data-aos-duration="700" class="topItem">
           <h4>Titan Women's Lagan Watch</h4>
           <img class="img-fluid" src="./assets/top3 (3).png" alt="">
           <p>₹ 2,685.00</p>
@@ -79,7 +78,7 @@
       </div>
     </div>
   </div>  
-  <div data-aos="fade-left" data-aos-duration="700" class="col-6 mt-4">
+  <div data-aos="fade-left" data-aos-duration="700" class="col-lg-6 mt-4">
     <h3 class="text-light text-center">Special Edition Collection</h3>
     <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
@@ -141,7 +140,7 @@
     <a id="ban" class="btn btn-primary" href="">Shop Now</a>
   </div>
 </div>
-<div class="testimonial">
+<!-- <div class="testimonial">
   <div class="review text-light w-25">
     <div class="row">
       <div class="col-6">
@@ -157,9 +156,9 @@
   
     
   
-</div>
+</div> -->
 <footer data-aos="fade-up" data-aos-duration="700">
-  <div data-aos="flip-right" data-aos-duration="800" class="text-center">
+  <div data-aos="flip-right" data-aos-duration="800" data-aos-once="false" class="text-center">
     <h5>Follow us on</h5>
     <a href=""><i class="fa-brands fa-facebook"></i></a>
     <a href=""><i class="fa-brands fa-x-twitter"></i></a> 
@@ -173,15 +172,18 @@
   </div>
   <div data-aos="flip-right" data-aos-duration="800" class="text-center">
     <h5>Customer Support</h5>
-    <ul style="list-style: none;">
-      <li>Order Status</li>
-      <li>Service Centres</li>
-      <li>Product Registration</li>
-      <li>Support & FAQs</li>
+    <ul style="list-style: none; padding: 0;">
+      <li><a href="">Order Status</a></li>
+      <li><a href="">Service Centres</a></li>
+      <li><a href="">Product Registration</a></li>
+      <li><a href="">Support & FAQs</a></li>
     </ul>
   </div>
 </footer>
 </div>
 </div>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
