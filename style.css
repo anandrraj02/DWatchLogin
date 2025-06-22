@@ -213,6 +213,7 @@ footer a{
 }
 footer a i{
     font-size: 1.2rem;
+    transition: 0.5s;
 }
 footer a i:hover{
     font-size: 1.6rem;
